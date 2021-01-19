@@ -20,7 +20,7 @@ weatherQuery.addEventListener('submit',(e)=>{
             else
             {
                 messageOne.textContent='Location :'+ data.location
-                messageTwo.textContent='Forecast :'+ data.forecast
+                messageTwo.textContent='Weather Forecast :'+ data.forecast + ', Temperature: '+data.temp +' °C and Humidity:'+data.humidity
             }
         })
     })

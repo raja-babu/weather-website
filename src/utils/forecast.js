@@ -16,7 +16,9 @@ const getForcast=(latitude,longitude,callback)=>{
             else
             {
                 callback(undefined,{
-                    weather:response.body.current.weather_descriptions
+                    weather:response.body.current.weather_descriptions,
+                    temp:response.body.current.temperature,
+                    humidity:response.body.current.humidity
                 })
             }
         })

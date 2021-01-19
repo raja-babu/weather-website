@@ -83,6 +83,9 @@ app.get('/help',(req,res)=>{
                              forecast:forecastData.weather[0],                             
                              address:req.query.address,
                              location,
+                             temp:forecastData.temp,
+                             humidity:forecastData.humidity
+
                        })
                      }
                  })
