@@ -10,7 +10,8 @@ weatherQuery.addEventListener('submit',(e)=>{
     const location=search.value
     messageOne.textContent='Loading.....'
     messageTwo.textContent=''
-    fetch('https://3000-d9850d26-64d4-44fc-a2f1-5a1ebc10bb26.ws-us03.gitpod.io/weather?address='+location).then((response)=>{
+     //fetch('https://3000-d9850d26-64d4-44fc-a2f1-5a1ebc10bb26.ws-us03.gitpod.io/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
             if(data.error)
             {
